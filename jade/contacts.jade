@@ -1,0 +1,74 @@
+doctype html
+html.no-js(lang='ru')
+    include _head
+    body
+        include _header2
+        section.content
+            .inner
+                .container-fluid
+                    .row
+                        .col-md-12
+                            .bread-crumbs
+                                a(href="#") Главная
+                                span |
+                                a(href="#") Контакты
+                            h2
+                                | НАШИ
+                                span  КОНТАКТЫ
+                    .row
+                        .col-sm-3
+                            .contacts-item
+                                h3
+                                    i.icon.icon-add
+                                    span Адрес
+                                p 101000, Москва,
+                                p Потаповский переулок.,
+                                p дом 5, строение 2,
+                                p оффис № 203
+                        .col-sm-3
+                            .contacts-item
+                                h3
+                                    i.icon.icon-ph
+                                    span телефоны
+                                h4
+                                    | 8 495
+                                    span  927-02-33
+                                h4
+                                    | 8 495
+                                    span  625-23-81
+                                h5 Экстренная связь:
+                                h4
+                                    | 7 903
+                                    span  119-15-94
+                        .col-sm-3
+                            .contacts-item
+                                h3
+                                    i.icon.icon-ma
+                                    span mail
+                                p irenal@leif.ru
+                                p irina@leif.ru
+                        .col-sm-3
+                            .contacts-item
+                                h3
+                                    i.icon.icon-ti
+                                    span график работы
+                                h5 Понедельник - Пятница
+                                p C 10:00 до 19:00
+                                .contacts-item-block
+                                    h5 Выходной:
+                                    p.p-mod Суббота, воскресенье
+                    .row
+                        .col-md-12
+                            .contacts-map
+                                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.856302505304!2d37.63898731573393!3d55.76099839882754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a60705e21d9%3A0xa1f007f551cfe141!2z0J_QvtGC0LDQv9C-0LLRgdC60LjQuSDQv9C10YAuLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTAxMDAw!5e0!3m2!1sru!2str!4v1495882960129" frameborder="0" style="border:0" allowfullscreen)
+                    .row
+                        .col-md-12
+                            .form-blue.form-block
+                                p Если у Вас возникли вопросы или хотите получить бесплатную консультацию, пожалуйста, воспользуйтесь формой обратной связи .
+                                form.form-shake
+                                    .field
+                                        input(type="text" name="name" placeholder="напишите Ваше имя" required)
+                                    .field
+                                        input(type="text" name="phone" placeholder="номер телефона" required)
+                                    button.btn.btn-form(name="send") Получить консультацию
+        include _footer

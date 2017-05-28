@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i&subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i&subset=cyrillic,cyrillic-ext,latin-ext");
 @font-face {
   font-family: "Myriad Pro";
   font-style: normal;
@@ -193,7 +193,8 @@ body {
       width: 200px;
       margin: 0;
       left: -100%;
-      border-right: 1px solid white; } }
+      border-right: 1px solid white;
+      z-index: 1; } }
   .h-mn li {
     float: left;
     padding: 15px 0; }
@@ -336,3 +337,9 @@ body {
   padding: 2px 15px; }
   .p-pol-white span {
     font-size: 18px; }
+
+.header-top-mod {
+  position: static;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0d345f), to(#0a2447));
+  background-image: -webkit-linear-gradient(bottom, #0d345f 0%, #0a2447 100%);
+  background-image: linear-gradient(to top, #0d345f 0%, #0a2447 100%); }

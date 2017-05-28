@@ -213,6 +213,7 @@ body{
       margin: 0;
       left: -100%;
       border-right: 1px solid white;
+      z-index: 1;
     }
   }
   li{
@@ -398,6 +399,10 @@ body{
   }
 }
 
+.header-top-mod{
+  position: static;
+  background-image: linear-gradient(to top, #0d345f 0%, #0a2447 100%);
+}
 
 
 

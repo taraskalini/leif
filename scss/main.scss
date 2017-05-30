@@ -234,7 +234,7 @@ footer{
   padding: 39px 0;
   @if $adaptive == true {
     @media (max-width: 1030px){
-      padding: 25px 34px;
+      padding: 25px 28px;
       width: 370px;
       margin: 0 auto;
     }
@@ -244,11 +244,12 @@ footer{
   }
   p{
     text-align: center;
-    color: #fffeff;
+    color: #fffeff!important;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     margin-bottom: 20px;
+    margin-top: 0!important;
   }
   form{
     width: 942px;
@@ -657,6 +658,31 @@ footer{
     color: #1e1e1e;
     margin: 0;
   }
+  p{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+  h6{
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 25px;
+  }
+  ul{
+    margin-left: 18px;
+    margin-top: 25px;
+    li{
+      list-style-image: url("../img/raster/galka.png");
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
 }
 
 .contacts-item{
@@ -846,10 +872,74 @@ footer{
   }
 }
 
+.content-inner{
+  padding-left: 30px;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      padding-left: 0;
+    }
+  }
+  img{
+    width: 100%;
+    background-size: contain;
+    margin-top: 25px;
+  }
+}
 
+.content-inner-block{
+  padding-left: 25px;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      padding-left: 15px;
+    }
+  }
+  p{
+    font-weight: 400;
+  }
+}
 
+.news-nav{
+  margin: 50px 0;
+  margin-bottom: 75px;
+  @if $adaptive == true {
+    @media (max-width: 400px){
+      margin: 50px 0;
+    }
+  }
+}
 
+.news-nav-a{
+  color: #3676eb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+}
 
+.news-nav-a-left{
+  float: left;
+  @if $adaptive == true {
+    @media (max-width: 400px){
+      float: none;
+      margin-bottom: 15px;
+    }
+  }
+  span{
+    margin-left: 5px;
+  }
+}
+
+.news-nav-a-right{
+  float: right;
+  @if $adaptive == true {
+    @media (max-width: 400px){
+      float: none;
+    }
+  }
+  span{
+    margin-right: 5px;
+  }
+}
 
 
 

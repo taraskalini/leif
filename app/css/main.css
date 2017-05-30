@@ -311,7 +311,7 @@ footer {
   padding: 39px 0; }
   @media (max-width: 1030px) {
     .form-blue {
-      padding: 25px 34px;
+      padding: 25px 28px;
       width: 370px;
       margin: 0 auto; } }
   @media (max-width: 405px) {
@@ -319,11 +319,12 @@ footer {
       width: 288px; } }
   .form-blue p {
     text-align: center;
-    color: #fffeff;
+    color: #fffeff !important;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 0 !important; }
   .form-blue form {
     width: 942px;
     margin: 0 auto; }
@@ -665,6 +666,27 @@ footer {
   .content h2 {
     color: #1e1e1e;
     margin: 0; }
+  .content p {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 25px; }
+  .content h6 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 25px; }
+  .content ul {
+    margin-left: 18px;
+    margin-top: 25px; }
+    .content ul li {
+      list-style-image: url("../img/raster/galka.png");
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px; }
 
 .contacts-item {
   margin-top: 65px; }
@@ -816,6 +838,55 @@ footer {
         .news-mnu ul li a:hover, .news-mnu ul li a:focus {
           color: #ffffff;
           background-color: #0d345f; }
+
+.content-inner {
+  padding-left: 30px; }
+  @media (max-width: 991px) {
+    .content-inner {
+      padding-left: 0; } }
+  .content-inner img {
+    width: 100%;
+    background-size: contain;
+    margin-top: 25px; }
+
+.content-inner-block {
+  padding-left: 25px; }
+  @media (max-width: 991px) {
+    .content-inner-block {
+      padding-left: 15px; } }
+  .content-inner-block p {
+    font-weight: 400; }
+
+.news-nav {
+  margin: 50px 0;
+  margin-bottom: 75px; }
+  @media (max-width: 400px) {
+    .news-nav {
+      margin: 50px 0; } }
+
+.news-nav-a {
+  color: #3676eb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block; }
+
+.news-nav-a-left {
+  float: left; }
+  @media (max-width: 400px) {
+    .news-nav-a-left {
+      float: none;
+      margin-bottom: 15px; } }
+  .news-nav-a-left span {
+    margin-left: 5px; }
+
+.news-nav-a-right {
+  float: right; }
+  @media (max-width: 400px) {
+    .news-nav-a-right {
+      float: none; } }
+  .news-nav-a-right span {
+    margin-right: 5px; }
 
 .allert, .allert_tell {
   position: absolute;

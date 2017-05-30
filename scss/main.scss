@@ -723,9 +723,128 @@ footer{
   }
 }
 
+.news-content{
+  margin-top: 45px;
+}
 
+.news-item{
+  width: 100%;
+  border: 1px solid #1e1e1e;
+  margin-top: 10px;
+  padding: 11px 0;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  img{
+    width: 266px;
+    height: 155px;
+    position: absolute;
+    top: -9px;
+    right: 0;
+    @if $adaptive == true {
+      @media (max-width: 991px){
+        width: 266px;
+        position: static;
+      }
+      @media (max-width: 400px){
+        width: 100%;
+      }
+    }
+  }
+  h5{
+    color: #1e1e1e;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    @if $adaptive == true {
+      @media (max-width: 991px){
+        margin-top: 0;
+      }
+    }
+  }
+  p{
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .btn-white{
+    margin-top: 15px;
+    @if $adaptive == true {
+      @media (max-width: 991px){
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
 
-
+.news-mnu{
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  .n-mnu-a{
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: transparent;
+    position: absolute;
+    &:hover,&:focus{
+      background-color: #ebebeb;
+    }
+    i{
+      position: absolute;
+      width: 5px;
+      height: 19px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+  .n-mnu-a-left{
+    top: 0;
+    left: 0;
+  }
+  .n-mnu-a-right{
+    top: 0;
+    right: 0;
+  }
+  ul{
+    width: 98px;
+    margin: 0 auto;
+    li{
+      display: inline-block;
+      a{
+        font-size: 16px;
+        font-weight: 400;
+        color: #666666;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        background-color: transparent;
+        transition: .2s all;
+        display: inline-block;
+        padding: 3px 10px;
+        &:hover,&:focus{
+          color: #ffffff;
+          background-color: #0d345f;
+        }
+      }
+    }
+  }
+}
 
 
 

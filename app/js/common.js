@@ -38,6 +38,33 @@ $(function() {
         });
     });
 
+    $(".tab-container").each(function(){
+        var $this = $(this);
+        var activeTab = $this.find(".tab-title.active").attr("href");
+        $(activeTab).slideDown();
+
+        $this.find(".tab-title").on("click",function(){
+            var id = $(this).attr("href");
+            $this.find(".tab-content").slideUp();
+            $(id).slideDown();
+            $this.find(".tab-title").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+
+    $(document).ready(function() {
+        $('#vertical').lightSlider({
+            gallery:true,
+            item:1,
+            vertical:true,
+            verticalHeight:430,
+            vThumbWidth:92,
+            thumbItem:4,
+            thumbMargin:4,
+            slideMargin:0
+        });
+    });
+
 });
 
 //Форма отправки 2.0
@@ -122,4 +149,7 @@ $(function() {
         }
         return false;
     });
+
+
+
 });

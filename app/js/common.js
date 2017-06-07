@@ -53,7 +53,7 @@ $(function() {
     });
 
     $(document).ready(function() {
-        $('#vertical').lightSlider({
+        var vrSlider = $('#vertical').lightSlider({
             gallery:true,
             item:1,
             vertical:true,
@@ -61,8 +61,66 @@ $(function() {
             vThumbWidth:92,
             thumbItem:4,
             thumbMargin:4,
-            slideMargin:0
+            slideMargin:0,
+            controls: false,
         });
+
+        $(".vr-a-prev").on("click",function(e){
+            e.preventDefault();
+            vrSlider.goToPrevSlide();
+        });
+
+        $(".vr-a-next").on("click",function(e){
+            e.preventDefault();
+            vrSlider.goToNextSlide();
+        });
+    });
+
+    $('.fn-line-a1').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".fn-block1").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".fn-block1,.fn-line-a1").length )return;
+        $('.fn-line-a1').removeClass('is-active');
+        $(".fn-block1").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    $('.fn-line-a2').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".fn-block2").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".fn-block2,.fn-line-a2").length )return;
+        $('.fn-line-a2').removeClass('is-active');
+        $(".fn-block2").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    $('.fn-line-a3').on('click',function(){
+        $(this).toggleClass('is-active');
+        $(".fn-block3").toggleClass('is-active');
+    });
+    $(document).on("click",function(event){
+        if( $(event.target).closest(".fn-block3,.fn-line-a3").length )return;
+        $('.fn-line-a3').removeClass('is-active');
+        $(".fn-block3").removeClass('is-active');
+        event.stopPropagation();
+    });
+
+    var text;
+    $(".a-tab").on("click",function(event){
+        event.preventDefault();
+        if($(this).hasClass('active')){
+            $(this).find("span").text(text);
+        }else{
+            text = $(this).find("span").text();
+            console.log(text);
+            $(this).find("span").text("Свернуть расширенный поиск");
+        }
+        $(this).toggleClass("active");
+        $(".form-none").toggleClass("active");
     });
 
 });

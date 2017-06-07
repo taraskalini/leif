@@ -310,11 +310,17 @@ body {
   text-align: center;
   right: 0;
   left: 0;
-  bottom: 130px;
+  bottom: 105px;
   position: absolute; }
-  @media (max-width: 1170px) {
+  @media (max-width: 1199px) {
     .lSSlideOuter .lSPager.lSpg {
-      bottom: 20px; } }
+      bottom: 35px; } }
+  @media (max-width: 718px) {
+    .lSSlideOuter .lSPager.lSpg {
+      bottom: 15px; } }
+  @media (max-width: 700px) {
+    .lSSlideOuter .lSPager.lSpg {
+      bottom: 23px; } }
 
 .p-white {
   display: inline-block;

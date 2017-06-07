@@ -8,6 +8,92 @@ html.no-js(lang='ru')
                 .container-fluid
                     .row
                         .col-md-12
+                            .tab-container.container-main
+                                .tabs-main-top
+                                    a.btn.tab-title.active(href="#tab1") Высшее образование
+                                    a.btn.tab-title.tabs-main-top-a2(href="#tab2") Среднее образование
+                                    a.btn.tab-title.tabs-main-top-a3(href="#tab3") Детские программы
+                                    a.btn.tab-title(href="#tab4") Курсы для взрослых
+                                #tab1.tab-content.tab-main-block
+                                    form
+                                        .form-none
+                                            .tab-dib
+                                                p Выберите страну
+                                                select.select-sp
+                                                    option Все страны
+                                            .tab-dib
+                                                p Выберите язык
+                                                select.select-sp
+                                                    option Все языки
+                                            .tab-dib
+                                                p Выберите программу
+                                                select.select-sp
+                                                    option Все программы
+                                            .tab-dib
+                                                p Выберите программу
+                                                select.select-sp
+                                                    option Все программы
+                                        .tab-dib
+                                            p Выберите страну
+                                            select.select-sp
+                                                option Все страны
+                                        .tab-dib
+                                            p Выберите язык
+                                            select.select-sp
+                                                option Все языки
+                                        .tab-dib
+                                            p Выберите программу
+                                            select.select-sp
+                                                option Все программы
+                                        .tab-dib.tab-dib-mod
+                                            button.btn.btn-tab(name="send")
+                                                span Найти
+                                    a.a-tab
+                                        span Расширенный поиск
+                                        i
+                                #tab2.tab-content.tab-main-block
+                                    form
+                                        .form-none
+                                            .tab-dib
+                                                p Выберите страну
+                                                select.select-sp
+                                                    option Все страны
+                                            .tab-dib
+                                                p Выберите язык
+                                                select.select-sp
+                                                    option Все языки
+                                            .tab-dib
+                                                p Выберите программу
+                                                select.select-sp
+                                                    option Все программы
+                                            .tab-dib
+                                                p Выберите программу
+                                                select.select-sp
+                                                    option Все программы
+                                        .tab-dib
+                                            p Выберите страну
+                                            select.select-sp
+                                                option Все страны
+                                        .tab-dib
+                                            p Выберите язык
+                                            select.select-sp
+                                                option Все языки
+                                        .tab-dib
+                                            p Выберите программу
+                                            select.select-sp
+                                                option Все программы
+                                        .tab-dib.tab-dib-mod
+                                            button.btn.btn-tab(name="send")
+                                                span Найти
+                                    a.a-tab
+                                        span Расширенный поиск
+                                        i
+                                #tab3.tab-content.tab-main-block
+                                    p tab3
+                                #tab4.tab-content.tab-main-block
+                                    p tab4
+                    .row
+                        .col-md-12
                             h2
                                 | Высшее
                                 span  образование
@@ -18,6 +104,57 @@ html.no-js(lang='ru')
                                 a.clearfix(href="#")
                                     | Узнать подробнее
                                     i.fa.fa-angle-double-right
+                    .row
+                        .col-md-12
+                            .block-inputs
+                                .block-inputs-top
+                                    |Программы
+                                .block-inputs-content
+                                    .block-inputs-content-item
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Бизнес / менеджмент
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Межд.отношения и политика
+                                    .block-inputs-content-item
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Медиа и коммуникации
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Экономика
+                                    .block-inputs-content-item
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Гуманитарные науки
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Юриспруденция (право)
+                                    .block-inputs-content-item
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Финансы и Бухучёт
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Инженерия
+                                    .block-inputs-content-item
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Биология и Биомедицина
+                                        label
+                                            input(type="radio" name="name")
+                                            span
+                                            p Естественные и точные науки
                     .row
                         .col-md-4
                             .block-item

@@ -4,9 +4,68 @@ html.no-js(lang='ru')
     body
         include _header
         section.af-header
-            img.img-tabs(src="img/raster/tabs.png")
+            .izbr
+                .inner
+                    .izbr-item
+                        i.fa.fa-heart
+                        | Учебное заведение добавлено в закладки
+                    .izbr-item
+                        a(href="#")
+                            i.fa.fa-bars
+                            | Посмотреть список
             .inner
                 .container-fluid
+                    .row
+                        .col-md-12
+                            .tab-container.container-main
+                                .tabs-main-top
+                                    a.btn.tab-title.active(href="#tab1") Высшее образование
+                                    a.btn.tab-title.tabs-main-top-a2(href="#tab2") Среднее образование
+                                    a.btn.tab-title.tabs-main-top-a3(href="#tab3") Детские программы
+                                    a.btn.tab-title(href="#tab4") Курсы для взрослых
+                                #tab1.tab-content.tab-main-block
+                                    form
+                                        .form-none
+                                            .tab-dib
+                                                p Выберите страну
+                                                select.select-sp
+                                                    option Все страны
+                                            .tab-dib
+                                                p Выберите язык
+                                                select.select-sp
+                                                    option Все языки
+                                            .tab-dib
+                                                p Выберите программу
+                                                select.select-sp
+                                                    option Все программы
+                                            .tab-dib
+                                                p Выберите программу
+                                                select.select-sp
+                                                    option Все программы
+                                        .tab-dib
+                                            p Выберите страну
+                                            select.select-sp
+                                                option Все страны
+                                        .tab-dib
+                                            p Выберите язык
+                                            select.select-sp
+                                                option Все языки
+                                        .tab-dib
+                                            p Выберите программу
+                                            select.select-sp
+                                                option Все программы
+                                        .tab-dib.tab-dib-mod
+                                            button.btn.btn-tab(name="send")
+                                                span Найти
+                                    a.a-tab
+                                        span Расширенный поиск
+                                        i
+                                #tab2.tab-content.tab-main-block
+                                    p tab2
+                                #tab3.tab-content.tab-main-block
+                                    p tab3
+                                #tab4.tab-content.tab-main-block
+                                    p tab4
                     .row
                         .col-md-4
                             .af-header-item

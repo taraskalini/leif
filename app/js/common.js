@@ -43,7 +43,8 @@ $(function() {
         var activeTab = $this.find(".tab-title.active").attr("href");
         $(activeTab).slideDown();
 
-        $this.find(".tab-title").on("click",function(){
+        $this.find(".tab-title").on("click",function(e){
+            e.preventDefault();
             var id = $(this).attr("href");
             $this.find(".tab-content").slideUp();
             $(id).slideDown();

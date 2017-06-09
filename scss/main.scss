@@ -1119,14 +1119,12 @@ footer{
     }
   }
   p{
-    color: #004276;
     font-size: 14px;
-    text-transform: uppercase;
+    line-height: 24px;
+    color: #333333;
     font-weight: 400;
-    margin: 0;
-    span{
-      font-weight: 700;
-    }
+    text-transform: none;
+    margin: 20px 0;
   }
   iframe{
     width: 100%;
@@ -1138,7 +1136,7 @@ footer{
       }
     }
   }
-  ul{
+  ul, ol{
     margin: 10px 0;
     margin-left: 50px;
     @if $adaptive == true {
@@ -1153,48 +1151,6 @@ footer{
       span{
         font-weight: 700;
       }
-    }
-  }
-  .ul-green{
-    li{
-      list-style-image: url("../img/raster/green.png");
-    }
-  }
-  .ul-red{
-    li{
-      list-style-image: url("../img/raster/red.png");
-    }
-    ul{
-      li{
-        list-style-image: url("../img/raster/redtr.png");
-      }
-    }
-  }
-  .ul-black{
-    margin-left: 30px;
-    li{
-      color: #333333;
-      font-size: 14px;
-      font-weight: 700;
-      list-style-image: url("../img/raster/black.png");
-    }
-  }
-  .ul-blue{
-    margin-left: 30px;
-    li{
-      list-style-image: url("../img/raster/blue.png");
-      margin: 10px 0;
-    }
-  }
-  .p-special{
-    font-size: 14px;
-    line-height: 24px;
-    color: #333333;
-    font-weight: 400;
-    text-transform: none;
-    margin: 20px 0;
-    span{
-      font-weight: 700;
     }
   }
   table{
@@ -1221,6 +1177,98 @@ footer{
       font-weight: 600;
       text-align: left;
       padding: 10px;
+    }
+  }
+}
+
+.tab-block-art{
+  p{
+    color: #004276;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.tab-block-ul{
+  ol{
+    li{
+      list-style-image: url("../img/raster/green.png");
+    }
+  }
+  ul{
+    li{
+      list-style-image: url("../img/raster/red.png");
+    }
+    ul{
+      li{
+        list-style-image: url("../img/raster/redtr.png");
+      }
+    }
+  }
+}
+
+.tab-block-t{
+  table{
+    width: 100%;
+    th{
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      text-transform: uppercase;
+      height: 34px;
+      border: 2px solid #314f79;
+      background-color: #0d345f;
+      text-align: left;
+      padding-left: 15px;
+      @if $adaptive == true {
+        @media (max-width: 400px){
+          font-size: 9px;
+          padding-left: 5px;
+        }
+      }
+    }
+    td{
+      border: 2px solid #314f79;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      padding: 5px 0;
+      padding-left: 15px;
+      @if $adaptive == true {
+        @media (max-width: 400px){
+          font-size: 9px;
+          padding-left: 5px;
+        }
+      }
+      ul{
+        li{
+          @if $adaptive == true {
+            @media (max-width: 450px){
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  ol{
+    margin-left: 30px;
+    li{
+      color: #333333;
+      font-size: 14px;
+      font-weight: 700;
+      list-style-image: url("../img/raster/black.png");
+    }
+  }
+  ul{
+    margin-left: 30px;
+    li{
+      list-style-image: url("../img/raster/blue.png");
+      margin: 10px 0;
     }
   }
 }
@@ -1475,43 +1523,6 @@ footer{
   @if $adaptive == true {
     @media (max-width: 900px){
       height: auto;
-    }
-  }
-}
-
-table.table-thin{
-  width: 100%;
-  th{
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-    text-transform: uppercase;
-    height: 34px;
-    border: 2px solid #314f79;
-    background-color: #0d345f;
-    text-align: left;
-    padding-left: 15px;
-    @if $adaptive == true {
-      @media (max-width: 400px){
-        font-size: 9px;
-        padding-left: 5px;
-      }
-    }
-  }
-  td{
-    border: 2px solid #314f79;
-    color: #333333;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: left;
-    padding: 5px 0;
-    padding-left: 15px;
-    @if $adaptive == true {
-      @media (max-width: 400px){
-        font-size: 9px;
-        padding-left: 5px;
-      }
     }
   }
 }
